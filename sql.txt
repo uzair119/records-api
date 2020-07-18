@@ -1,0 +1,20 @@
+CREATE TABLE records (
+  id INT NOT NULL AUTO_INCREMENT,
+  number_plate varchar(10),
+  owner_name varchar(50),
+  registration_date DATE,
+  engine_no varchar(20),
+  body_type varchar(20),
+  model_year INT,
+  seating_capacity INT,
+  horse_power INT,
+  make varchar(20),
+  tax_payment DATE,
+  cplc_clear BOOLEAN,
+  PRIMARY KEY (id)
+);
+
+INSERT INTO records (number_plate, owner_name, registration_date, engine_no, body_type, model_year, seating_capacity, horse_power, make, tax_payment, cplc_clear)
+VALUES (
+'AGT-462', 'Uzair Ahmed', '2018-03-12', 'FPC4328', 'SALOON', '2004', 4, 999, 'HYUNDAI', '2018-12-31', true
+);
